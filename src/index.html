@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Drag & Drop</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="explorers">
+      <div id="explorer1">
+        <div class="top-section">
+          <div class="nav">
+            <div class="dir-name" type="directory"></div>
+            <button class="up-dir"><img src="./assets/arrow-up.png" /></button>
+          </div>
+          <div class="sort-div">
+            <span>Sort By:</span>
+            <select name="sort" class="sort">
+              <option value="fileName">Name</option>
+              <option value="type">Type</option>
+            </select>
+          </div>
+        </div>
+        <div class="files-section"></div>
+      </div>
+      <div class="seperator"></div>
+      <div id="explorer2">
+        <div class="top-section">
+          <div class="nav">
+            <span class="dir-name" type="directory"></span>
+            <button class="up-dir"><img src="./assets/arrow-up.png" /></button>
+          </div>
+          <div class="sort-div">
+            <span>Sort By:</span>
+            <select name="sort" class="sort">
+              <option value="fileName">Name</option>
+              <option value="type">Type</option>
+            </select>
+          </div>
+        </div>
+        <div class="files-section"></div>
+      </div>
+    </div>
+    <div id="images"></div>
+    <script src="./fileExplorerPanel.js"></script>
+    <script src="./imagesSection.js"></script>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
